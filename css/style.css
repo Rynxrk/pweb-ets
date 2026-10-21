@@ -1,0 +1,55 @@
+/* LibraryReg – tema kustom di atas Bootstrap 5 */
+:root{
+  --pine:#123b34; --saf:#f2b632; --mint:#e1eddf;
+  --fh:'Bricolage Grotesque',system-ui,sans-serif;
+  --fb:'Figtree',system-ui,sans-serif;
+}
+[data-bs-theme=dark]{ --pine:#8fd1b8; --mint:#1c2f2a; }
+
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:var(--fb);background:var(--bs-body-bg)}
+h1,h2,h3{font-family:var(--fh);color:var(--pine);line-height:1.15}
+h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:800}
+h2{font-size:clamp(1.6rem,3vw,2.2rem)}
+h3{font-size:1.15rem}
+
+/* Navbar */
+.navbar{background:var(--bs-body-bg)}
+.brand{font:800 1.3rem var(--fh);color:var(--pine)!important;display:flex;align-items:center;gap:8px}
+.nav-link.active{background:var(--mint);color:var(--pine)!important;font-weight:600;border-radius:8px}
+
+/* Tombol */
+.btn-pine{background:var(--pine);border-color:var(--pine);color:#fff}
+[data-bs-theme=dark] .btn-pine{color:#0f1a17}
+.btn-saf{background:var(--saf);border-color:var(--saf);color:#1b2421;font-weight:600}
+.btn-saf:hover{background:#e0a620;border-color:#e0a620;color:#1b2421}
+.btn-outline-pine{border-color:var(--pine);color:var(--pine)}
+.btn-outline-pine:hover{background:var(--pine);color:#fff}
+
+/* Hero */
+.hero{padding:64px 0 48px;background:linear-gradient(180deg,var(--mint),var(--bs-body-bg))}
+.stats b{display:block;font:800 1.8rem var(--fh);color:var(--pine)}
+.stats span{font-size:.9rem;color:var(--bs-secondary-color)}
+.lib-card{width:100%;max-width:380px;aspect-ratio:1.6;background:#123b34;color:#fff;border-radius:16px;padding:22px;
+  transform:rotate(-5deg);box-shadow:0 24px 40px -18px rgba(0,0,0,.45);position:relative;overflow:hidden}
+.lib-card::before{content:"";position:absolute;right:-30px;top:-30px;width:150px;height:150px;border-radius:50%;background:var(--saf)}
+.lib-card small{opacity:.75}
+.lib-card b{display:block;margin-top:44px;font:700 1.4rem var(--fh);position:relative}
+.spines{position:absolute;right:22px;bottom:18px;display:flex;gap:5px;align-items:flex-end}
+.spines i{width:12px;border-radius:2px;background:#fff;opacity:.85}
+
+/* Section & kartu */
+.section-alt{background:var(--mint)}
+.card{border-color:var(--bs-border-color);border-radius:12px}
+.card-feat{border-left:6px solid var(--saf)}
+
+/* Tabel */
+.table thead th{background:var(--mint);color:var(--pine);font-weight:600;white-space:nowrap}
+.badge-jenis{background:var(--mint);color:var(--pine);font-weight:600}
+
+/* Footer */
+.footer{background:#123b34;color:#e8efe9}
+.footer h3{color:var(--saf)}
+[data-bs-theme=dark] .footer{background:#0a1311}
+
+:focus-visible{outline:3px solid var(--saf);outline-offset:2px}
